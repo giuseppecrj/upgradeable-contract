@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
-contract Counter {
+contract Counter2 {
   uint256 public _number;
 
   function initialize(uint256 number) public {
@@ -14,5 +14,9 @@ contract Counter {
 
   function getNumber() public view returns (uint256) {
     return _number;
+  }
+
+  function hello() public pure returns (string memory) {
+    return "hello";
   }
 }
