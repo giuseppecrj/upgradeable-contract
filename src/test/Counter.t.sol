@@ -36,6 +36,7 @@ contract CounterTest is Test {
     proxy.upgrade(address(newCounter), admin, address(0));
 
     Counter2 newProxyCounter = Counter2(proxyAddress);
-    console.log("HELLO", newProxyCounter.hello());
+    console.log(newProxyCounter.hello());
+    console.log(newProxyCounter.getNumber());
   }
 }
